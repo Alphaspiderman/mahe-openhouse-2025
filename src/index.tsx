@@ -1,7 +1,8 @@
 /* @refresh reload */
-import { render } from 'solid-js/web'
-import App from '@/App'
+import App from '@/App';
 
-const root = document.getElementById('root')
+import { render } from 'solid-js/web';
 
-render(() => <App />, root!)
+const root = document.getElementById('root');
+
+render(() => <App />, root!);

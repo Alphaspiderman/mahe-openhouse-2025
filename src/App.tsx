@@ -1,12 +1,15 @@
-import { createSignal } from 'solid-js'
-import solidLogo from '@/assets/solid.svg'
-import appLogo from '/favicon.svg'
-import PWABadge from '@/components/pwa-badge'
+import { createSignal } from 'solid-js';
+
+import PWABadge from '@/components/pwa-badge';
+
+import solidLogo from '@/assets/solid.svg';
 
 import '@/styles/globals.css';
 
+import appLogo from '/favicon.svg';
+
 function App() {
-  const [count, setCount] = createSignal(0)
+  const [count, setCount] = createSignal(0);
 
   return (
     <>
@@ -32,7 +35,7 @@ function App() {
       </p>
       <PWABadge />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
