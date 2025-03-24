@@ -60,8 +60,16 @@
   font-display: swap;
 }
 
+@theme {
+  --color-background: #85b841;
+  --color-secondary: #e4da4c;
+  --color-tertiary: #f45197;
+  --color-foreground: #000000;
+}
+
 :root {
   body: {
     font-family: 'HelveticaNowDisplay', sans-serif;
+    background-color: var(--color-background);
   }
 }

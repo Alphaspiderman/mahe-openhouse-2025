@@ -31,29 +31,49 @@ const PWABadge: Component = () => {
   }
 
   return (
-    <div role="alert" aria-labelledby="toast-message">
-      <div class="begin">
+    <div
+      role="alert"
+      aria-labelledby="toast-message"
+      class="fixed bottom-4 left-1/2 z-50 w-[90%] max-w-sm -translate-x-1/2 transform"
+    >
+      <div class="pointer-events-auto">
         <Show when={offlineReady() || needRefresh()}>
-          <div>
-            <div>
+          <div class="ring-opacity-5 rounded-lg bg-white p-4 shadow-lg ring-1 ring-black dark:bg-gray-800">
+            <div class="mb-3">
               <Show
                 fallback={
-                  <span id="toast-message">
+                  <span
+                    id="toast-message"
+                    class="text-sm font-medium text-gray-900 dark:text-gray-100"
+                  >
                     New content available, click on reload button to update.
                   </span>
                 }
                 when={offlineReady()}
               >
-                <span id="toast-message">App ready to work offline</span>
+                <span
+                  id="toast-message"
+                  class="text-sm font-medium text-gray-900 dark:text-gray-100"
+                >
+                  App ready to work offline
+                </span>
               </Show>
             </div>
-            <div>
+            <div class="flex justify-end space-x-2">
               <Show when={needRefresh()}>
-                <button onClick={() => updateServiceWorker(true)}>
+                <button
+                  onClick={() => updateServiceWorker(true)}
+                  class="rounded-md bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none"
+                >
                   Reload
                 </button>
               </Show>
-              <button onClick={() => close()}>Close</button>
+              <button
+                onClick={() => close()}
+                class="rounded-md bg-gray-100 px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-200 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:outline-none"
+              >
+                Close
+              </button>
             </div>
           </div>
         </Show>

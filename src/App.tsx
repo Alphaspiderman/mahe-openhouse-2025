@@ -5,7 +5,7 @@ import '@/styles/globals.css';
 function App() {
   return (
     <>
-      <h1 class="text-xl font-extrabold">TESTING CHANGES</h1>
+      <div class="mx-auto max-w-screen-lg">asdfa</div>
       <PWABadge />
     </>
   );
