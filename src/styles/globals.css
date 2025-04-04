@@ -68,7 +68,7 @@
 }
 
 :root {
-  body: {
+  body {
     font-family: 'HelveticaNowDisplay', sans-serif;
     background-color: var(--color-background);
   }
