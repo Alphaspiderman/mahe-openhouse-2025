@@ -3,10 +3,8 @@
 @font-face {
   font-family: 'HelveticaNowDisplay';
   src:
-    url('https://admissions.manipal.edu/lp/maheblr/open-house/assets/fonts/HelveticaNowDisplay-Light.woff2')
-      format('woff2'),
-    url('https://admissions.manipal.edu/lp/maheblr/open-house/assets/fonts/HelveticaNowDisplay-Light.woff')
-      format('woff');
+    url('/fonts/HelveticaNowDisplay-Light.woff2') format('woff2'),
+    url('/fonts/HelveticaNowDisplay-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -15,34 +13,8 @@
 @font-face {
   font-family: 'HelveticaNowDisplay';
   src:
-    url('https://admissions.manipal.edu/lp/maheblr/open-house/assets/fonts/HelveticaNowDisplay-Bold.woff2')
-      format('woff2'),
-    url('https://admissions.manipal.edu/lp/maheblr/open-house/assets/fonts/HelveticaNowDisplay-Bold.woff')
-      format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'HelveticaNowDisplay';
-  src:
-    url('https://admissions.manipal.edu/lp/maheblr/open-house/assets/fonts/HelveticaNowDisplay-ExtraBold.woff2')
-      format('woff2'),
-    url('https://admissions.manipal.edu/lp/maheblr/open-house/assets/fonts/HelveticaNowDisplay-ExtraBold.woff')
-      format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'HelveticaNowDisplay';
-  src:
-    url('https://admissions.manipal.edu/lp/maheblr/open-house/assets/fonts/HelveticaNowDisplay-Regular.woff2')
-      format('woff2'),
-    url('https://admissions.manipal.edu/lp/maheblr/open-house/assets/fonts/HelveticaNowDisplay-Regular.woff')
-      format('woff');
+    url('/fonts/HelveticaNowDisplay-Regular.woff2') format('woff2'),
+    url('/fonts/HelveticaNowDisplay-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -51,11 +23,29 @@
 @font-face {
   font-family: 'HelveticaNowDisplay';
   src:
-    url('https://admissions.manipal.edu/lp/maheblr/open-house/assets/fonts/HelveticaNowDisplay-Medium.woff2')
-      format('woff2'),
-    url('https://admissions.manipal.edu/lp/maheblr/open-house/assets/fonts/HelveticaNowDisplay-Medium.woff')
-      format('woff');
+    url('/fonts/HelveticaNowDisplay-Bold.woff2') format('woff2'),
+    url('/fonts/HelveticaNowDisplay-Bold.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNowDisplay';
+  src:
+    url('/fonts/HelveticaNowDisplay-Medium.woff2') format('woff2'),
+    url('/fonts/HelveticaNowDisplay-Medium.woff') format('woff');
   font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNowDisplay';
+  src:
+    url('/fonts/HelveticaNowDisplay-ExtraBold.woff2') format('woff2'),
+    url('/fonts/HelveticaNowDisplay-ExtraBold.woff') format('woff');
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
@@ -70,6 +60,7 @@
 :root {
   body {
     font-family: 'HelveticaNowDisplay', sans-serif;
+    line-height: 1.5;
     background-color: var(--color-background);
   }
 }

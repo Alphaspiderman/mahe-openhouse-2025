@@ -39,7 +39,7 @@ export default function RootLayout({
           />
           <Image src={bannerLogo} alt="Logo Banner" className="w-36" priority />
         </header>
-        <main className="mx-10">{children}</main>
+        <main className="mx-4 my-8 lg:mx-10">{children}</main>
       </body>
     </html>
   );
