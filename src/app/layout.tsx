@@ -39,10 +39,15 @@ export default function RootLayout({
           <Image
             src={bannerInstitute}
             alt="Institute Banner"
-            className="w-24"
+            className="w-24 invert"
             priority
           />
-          <Image src={bannerLogo} alt="Logo Banner" className="w-36" priority />
+          <Image
+            src={bannerLogo}
+            alt="Logo Banner"
+            className="w-36 invert"
+            priority
+          />
         </header>
         <main className="mx-4 my-8 lg:mx-10">{children}</main>
       </body>

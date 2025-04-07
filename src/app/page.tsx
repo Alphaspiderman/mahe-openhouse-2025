@@ -2,11 +2,12 @@ import { eventsData } from '@/data/events';
 import Image from 'next/image';
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Checkbox } from '@/components/ui/checkbox';
 
 export default function Home() {
   return (
     <div className="mx-auto flex max-w-2xl flex-col space-y-4">
-      <Card className="bg-theme-secondary">
+      <Card className="bg-theme-secondary border-transparent">
         <CardHeader>
           <CardTitle className="text-2xl font-black tracking-tight uppercase">
             Schedule
@@ -24,9 +25,11 @@ export default function Home() {
                 />
               </div>
               <div>
-                <p className="text-xl font-bold uppercase">{activity.name}</p>
+                <p className="text-lg font-bold uppercase lg:text-xl">
+                  {activity.name}
+                </p>
                 {activity.times.length > 1 ? (
-                  <ul className="list-inside list-disc text-lg uppercase">
+                  <ul className="list-inside list-disc uppercase lg:text-lg">
                     {activity.times.map((time, index) => (
                       <li key={index}>
                         <span className="font-semibold">{time.startTime}</span>{' '}
@@ -35,7 +38,7 @@ export default function Home() {
                     ))}
                   </ul>
                 ) : (
-                  <div className="text-lg uppercase">
+                  <div className="uppercase lg:text-lg">
                     <span className="font-semibold">
                       {activity.times[0].startTime}
                     </span>
@@ -50,16 +53,29 @@ export default function Home() {
           ))}
         </CardContent>
       </Card>
-      <Card className="bg-theme-tertiary">
+      <Card className="bg-theme-tertiary border-transparent">
         <CardHeader>
           <CardTitle className="text-2xl font-black tracking-tight uppercase">
-            Your Activities
+            Your Activity Checklist
           </CardTitle>
         </CardHeader>
         <CardContent className="flex flex-col space-y-2">
           {eventsData.activities.map((activity) => (
-            <div key={activity.department} className="space-y-1">
-              <p className="uppercase">{activity.department}</p>
+            <div key={activity.department} className="flex flex-col space-y-2">
+              <div className="flex items-start">
+                <Checkbox className="!mt-1.5 !mr-2.5 data-[state=checked]:bg-white" />
+                <p className="text-lg font-semibold uppercase">
+                  {activity.department}
+                </p>
+              </div>
+              <div className="flex flex-col space-y-2 pl-8">
+                {activity.events.map((event, index) => (
+                  <div key={index} className="flex items-start">
+                    <Checkbox className="!mt-1.5 !mr-2.5 !size-3 data-[state=checked]:bg-white" />
+                    <p className="uppercase">{event.name}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </CardContent>
