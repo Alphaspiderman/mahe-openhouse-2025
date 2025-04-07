@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Work_Sans } from 'next/font/google';
 import Image from 'next/image';
 
 import bannerInstitute from '@/assets/banner-institute.webp';
@@ -21,6 +22,10 @@ export const metadata: Metadata = {
   },
 };
 
+const fontSans = Work_Sans({
+  subsets: ['latin'],
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body className="antialiased">
+      <body className={`${fontSans.className} antialiased`}>
         <header className="m-4 items-start space-y-2">
           <Image
             src={bannerInstitute}

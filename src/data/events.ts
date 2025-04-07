@@ -3,8 +3,8 @@ export type EventsData = typeof eventsData;
 export const eventsData = {
   schedule: [
     {
-      name: 'Registration',
-      icon: '/icons/pen.png',
+      name: 'Registrations Open',
+      icon: '/icons/cheer.png',
       times: [
         {
           startTime: '09:00AM',
@@ -14,7 +14,7 @@ export const eventsData = {
     },
     {
       name: 'Activity Display',
-      icon: '/icons/pen.png',
+      icon: '/icons/atom.png',
       times: [
         {
           startTime: '10:00AM',
@@ -24,7 +24,7 @@ export const eventsData = {
     },
     {
       name: 'Address by Director of MIT',
-      icon: '/icons/pen.png',
+      icon: '/icons/mic.png',
       times: [
         {
           startTime: '11:30AM',
