@@ -64,7 +64,7 @@ export default function Home() {
             <div key={activity.department} className="flex flex-col space-y-2">
               <div className="flex items-start">
                 <Checkbox className="!mt-1.5 !mr-2.5 data-[state=checked]:bg-white" />
-                <p className="text-lg font-semibold uppercase">
+                <p className="text-lg font-bold uppercase">
                   {activity.department}
                 </p>
               </div>

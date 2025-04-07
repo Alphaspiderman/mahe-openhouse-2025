@@ -50,6 +50,16 @@ export default function RootLayout({
           />
         </header>
         <main className="mx-4 my-8 lg:mx-10">{children}</main>
+        <footer className="m-4 items-start font-bold uppercase">
+          Built with 💖, <br /> Team{' '}
+          <a
+            href="https://github.com/Alphaspiderman/mahe-openhouse-2025"
+            className="underline decoration-2 underline-offset-2"
+          >
+            Whitespace as a Service
+          </a>
+          .
+        </footer>
       </body>
     </html>
   );
