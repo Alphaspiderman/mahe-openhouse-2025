@@ -24,6 +24,7 @@ export const metadata: Metadata = {
 
 const fontSans = Work_Sans({
   subsets: ['latin'],
+  preload: true,
 });
 
 export default function RootLayout({
