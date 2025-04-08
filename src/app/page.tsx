@@ -63,16 +63,18 @@ export default function Home() {
           {eventsData.activities.map((activity) => (
             <div key={activity.department} className="flex flex-col space-y-2">
               <div className="flex items-start">
-                <Checkbox className="!mt-1.5 !mr-2.5 data-[state=checked]:bg-white" />
-                <p className="text-lg font-bold uppercase">
+                <Checkbox className="peer !mt-1.5 !mr-2.5 data-[state=checked]:bg-white" />
+                <p className="text-lg font-bold uppercase peer-data-[state=checked]:line-through peer-data-[state=checked]:opacity-50">
                   {activity.department}
                 </p>
               </div>
               <div className="flex flex-col space-y-2 pl-8">
                 {activity.events.map((event, index) => (
                   <div key={index} className="flex items-start">
-                    <Checkbox className="!mt-1.5 !mr-2.5 !size-3 data-[state=checked]:bg-white" />
-                    <p className="uppercase">{event.name}</p>
+                    <Checkbox className="peer !mt-1.5 !mr-2.5 !size-3 data-[state=checked]:bg-white" />
+                    <p className="uppercase peer-data-[state=checked]:line-through peer-data-[state=checked]:opacity-50">
+                      {event.name}
+                    </p>
                   </div>
                 ))}
               </div>
