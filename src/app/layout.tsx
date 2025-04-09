@@ -63,13 +63,21 @@ export default function RootLayout({
           <InstallButton />
         </header>
         <main className="mx-4 my-8 lg:mx-10">{children}</main>
-        <footer className="m-4 items-start font-bold uppercase">
-          Built with 💖, <br /> Team{' '}
+        <footer className="m-4 items-start font-semibold tracking-tight uppercase">
+          Built with 💖, by
+          <br />
           <a
-            href="https://github.com/Alphaspiderman/mahe-openhouse-2025"
-            className="underline decoration-2 underline-offset-2"
+            href="https://linkedin.com/in/abhigyantrips"
+            className="font-bold underline decoration-1 underline-offset-2 hover:decoration-2"
           >
-            Whitespace as a Service
+            Abhigyan Trips
+          </a>{' '}
+          and{' '}
+          <a
+            href="https://linkedin.com/in/raghav-gupta-ind"
+            className="font-bold underline decoration-1 underline-offset-2 hover:decoration-2"
+          >
+            Raghav Gupta
           </a>
           .
         </footer>
