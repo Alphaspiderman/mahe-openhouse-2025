@@ -22,6 +22,12 @@ export const metadata: Metadata = {
     apple: '/favicon.png',
     shortcut: '/favicon.png',
   },
+  openGraph: {
+    type: 'website',
+    title: 'MAHE Open House 2025',
+    description: 'The complete Open House schedule for MIT Bengaluru.',
+    url: 'https://mit-openhouse.alphaspiderman.dev',
+  },
 };
 
 const fontSans = Work_Sans({

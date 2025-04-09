@@ -1,10 +1,24 @@
-import { eventsData } from '@/data/events';
+'use client';
+
+import { EventsData, eventsData } from '@/data/events';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Checkbox } from '@/components/ui/checkbox';
 
 export default function Home() {
+  const [activityChecklist, setActivityChecklist] = useState<
+    EventsData['activities']
+  >(eventsData.activities);
+
+  useEffect(() => {
+    const savedChecklist = localStorage.getItem('activityChecklist');
+    if (savedChecklist) {
+      setActivityChecklist(JSON.parse(savedChecklist));
+    }
+  }, []);
+
   return (
     <div className="mx-auto flex max-w-2xl flex-col space-y-4">
       <Card className="bg-theme-secondary border-transparent">
@@ -60,10 +74,25 @@ export default function Home() {
           </CardTitle>
         </CardHeader>
         <CardContent className="flex flex-col space-y-2">
-          {eventsData.activities.map((activity) => (
+          {activityChecklist.map((activity) => (
             <div key={activity.department} className="flex flex-col space-y-2">
               <div className="flex items-start">
-                <Checkbox className="peer !mt-1.5 !mr-2.5 data-[state=checked]:bg-white" />
+                <Checkbox
+                  className="peer !mt-1.5 !mr-2.5 data-[state=checked]:bg-white"
+                  checked={activity.checked}
+                  onCheckedChange={(checked) => {
+                    const updatedChecklist = activityChecklist.map((a) =>
+                      a.department === activity.department
+                        ? { ...a, checked: Boolean(checked) }
+                        : a
+                    );
+                    setActivityChecklist(updatedChecklist);
+                    localStorage.setItem(
+                      'activityChecklist',
+                      JSON.stringify(updatedChecklist)
+                    );
+                  }}
+                />
                 <p className="text-lg font-bold uppercase peer-data-[state=checked]:line-through peer-data-[state=checked]:opacity-50">
                   {activity.department}
                 </p>
@@ -71,7 +100,29 @@ export default function Home() {
               <div className="flex flex-col space-y-2 pl-8">
                 {activity.events.map((event, index) => (
                   <div key={index} className="flex items-start">
-                    <Checkbox className="peer !mt-1.5 !mr-2.5 !size-3 data-[state=checked]:bg-white" />
+                    <Checkbox
+                      className="peer !mt-1.5 !mr-2.5 !size-3 data-[state=checked]:bg-white"
+                      checked={event.checked}
+                      onCheckedChange={(checked) => {
+                        const updatedChecklist = activityChecklist.map((a) =>
+                          a.department === activity.department
+                            ? {
+                                ...a,
+                                events: a.events.map((e, i) =>
+                                  i === index
+                                    ? { ...e, checked: Boolean(checked) }
+                                    : e
+                                ),
+                              }
+                            : a
+                        );
+                        setActivityChecklist(updatedChecklist);
+                        localStorage.setItem(
+                          'activityChecklist',
+                          JSON.stringify(updatedChecklist)
+                        );
+                      }}
+                    />
                     <p className="uppercase peer-data-[state=checked]:line-through peer-data-[state=checked]:opacity-50">
                       {event.name}
                     </p>
