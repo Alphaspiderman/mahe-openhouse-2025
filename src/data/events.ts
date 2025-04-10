@@ -3,7 +3,7 @@ export type EventsData = typeof eventsData;
 export const eventsData = {
   schedule: [
     {
-      name: 'Registrations Open',
+      name: 'Information Desk',
       icon: '/icons/cheer.png',
       times: [
         {
@@ -30,6 +30,12 @@ export const eventsData = {
           startTime: '11:30AM',
           endTime: '12:00PM',
         },
+      ],
+    },
+    {
+      name: 'Cultural Program',
+      icon: '/icons/standup.png',
+      times: [
         {
           startTime: '12:00PM',
           endTime: '12:30PM',
@@ -50,6 +56,7 @@ export const eventsData = {
   activities: [
     {
       department: 'Research Committee',
+      location: 'AB4-203',
       checked: false,
       icon: '/icons/atom.png',
       events: [
@@ -61,6 +68,7 @@ export const eventsData = {
     },
     {
       department: 'Office of International Relations',
+      location: 'AB4-204',
       checked: false,
       icon: '/icons/globe.png',
       events: [
@@ -80,6 +88,7 @@ export const eventsData = {
     },
     {
       department: 'Information Technology',
+      location: 'AB5-105',
       checked: false,
       icon: '/icons/computer.png',
       events: [
@@ -95,6 +104,7 @@ export const eventsData = {
     },
     {
       department: 'Student Welfare',
+      location: 'AB5 Auditorium',
       checked: false,
       icon: '/icons/students.png',
       events: [
@@ -114,17 +124,10 @@ export const eventsData = {
     },
     {
       department: 'Computer Science and Engineering',
+      location: 'AB5-104',
       checked: false,
       icon: '/icons/code.png',
       events: [
-        {
-          name: 'Project Demo: AR/VR Game Development',
-          checked: false,
-        },
-        {
-          name: 'Project Demo: Multimodal Intelligent Knowledge Utility (MIKU)',
-          checked: false,
-        },
         {
           name: 'Briefing Course Structure 2025',
           checked: false,
@@ -136,7 +139,24 @@ export const eventsData = {
       ],
     },
     {
+      department: 'Computer Science and Engineering (Project Demo)',
+      location: 'AB5-109',
+      checked: false,
+      icon: '/icons/code.png',
+      events: [
+        {
+          name: 'Project Demo: AR/VR Game Development',
+          checked: false,
+        },
+        {
+          name: 'Project Demo: Multimodal Intelligent Knowledge Utility (MIKU)',
+          checked: false,
+        },
+      ],
+    },
+    {
       department: 'Bioinspired Design and Optimization Centre (BIODOC)',
+      location: 'AB4-205',
       checked: false,
       icon: '/icons/dna.png',
       events: [
@@ -164,6 +184,7 @@ export const eventsData = {
     },
     {
       department: 'Science and Humanities',
+      location: 'AB4-207',
       checked: false,
       icon: '/icons/flask.png',
       events: [
@@ -183,6 +204,7 @@ export const eventsData = {
     },
     {
       department: 'Electronics and Communication Engineering',
+      location: 'AB4-206',
       checked: false,
       icon: '/icons/chip.png',
       events: [
@@ -214,6 +236,7 @@ export const eventsData = {
     },
     {
       department: 'Centre of Excellence in Autonomous Mobility',
+      location: 'AB5 MAVRO Lab',
       checked: false,
       icon: '/icons/car.png',
       events: [
@@ -233,6 +256,7 @@ export const eventsData = {
     },
     {
       department: 'IEEE Student Branch',
+      location: 'AB5-102',
       checked: false,
       icon: '/icons/ieee.png',
       events: [

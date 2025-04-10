@@ -93,8 +93,12 @@ export default function Home() {
                     );
                   }}
                 />
-                <p className="text-lg font-bold uppercase peer-data-[state=checked]:line-through peer-data-[state=checked]:opacity-50">
+                <p className="!mr-2.5 text-lg font-bold uppercase peer-data-[state=checked]:line-through peer-data-[state=checked]:opacity-50">
                   {activity.department}
+                </p>
+                <p className="self-center text-sm italic">
+                  {' '}
+                  (Location: {activity.location})
                 </p>
               </div>
               <div className="flex flex-col space-y-2 pl-8">
