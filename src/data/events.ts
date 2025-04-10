@@ -4,7 +4,7 @@ export const eventsData = {
   schedule: [
     {
       name: 'Information Desk',
-      icon: '/icons/cheer.png',
+      icon: '/icons/brain.png',
       times: [
         {
           startTime: '09:00AM',
@@ -34,7 +34,7 @@ export const eventsData = {
     },
     {
       name: 'Cultural Program',
-      icon: '/icons/standup.png',
+      icon: '/icons/cheer.png',
       times: [
         {
           startTime: '12:00PM',

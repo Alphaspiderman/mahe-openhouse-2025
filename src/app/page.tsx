@@ -27,7 +27,7 @@ export default function Home() {
             Schedule
           </CardTitle>
         </CardHeader>
-        <CardContent className="flex flex-col space-y-2">
+        <CardContent className="flex flex-col space-y-3">
           {eventsData.schedule.map((activity) => (
             <div key={activity.name} className="flex space-x-4">
               <div className="relative my-auto h-10 w-10 min-w-[36px] flex-shrink-0">
@@ -78,7 +78,7 @@ export default function Home() {
             <div key={activity.department} className="flex flex-col space-y-2">
               <div className="flex items-start">
                 <Checkbox
-                  className="peer !mt-1.5 !mr-2.5 data-[state=checked]:bg-white"
+                  className="!mt-1.5 !mr-2.5 data-[state=checked]:bg-white"
                   checked={activity.checked}
                   onCheckedChange={(checked) => {
                     const updatedChecklist = activityChecklist.map((a) =>
@@ -93,19 +93,29 @@ export default function Home() {
                     );
                   }}
                 />
-                <p className="!mr-2.5 text-lg font-bold uppercase peer-data-[state=checked]:line-through peer-data-[state=checked]:opacity-50">
-                  {activity.department}
-                </p>
-                <p className="self-center text-sm italic">
-                  {' '}
-                  (Location: {activity.location})
-                </p>
+                <div className="flex flex-col items-start">
+                  <p
+                    className={`!mr-2.5 text-lg font-bold uppercase ${
+                      activity.checked ? 'line-through opacity-50' : ''
+                    }`}
+                  >
+                    {activity.department}
+                  </p>
+                  <p
+                    className={`text-sm uppercase ${
+                      activity.checked ? 'opacity-50' : ''
+                    }`}
+                  >
+                    <b className="font-semibold">Location:</b>{' '}
+                    {activity.location}
+                  </p>
+                </div>
               </div>
               <div className="flex flex-col space-y-2 pl-8">
                 {activity.events.map((event, index) => (
                   <div key={index} className="flex items-start">
                     <Checkbox
-                      className="peer !mt-1.5 !mr-2.5 !size-3 data-[state=checked]:bg-white"
+                      className="!mt-1.5 !mr-2.5 !size-3 data-[state=checked]:bg-white"
                       checked={event.checked}
                       onCheckedChange={(checked) => {
                         const updatedChecklist = activityChecklist.map((a) =>
@@ -127,7 +137,11 @@ export default function Home() {
                         );
                       }}
                     />
-                    <p className="uppercase peer-data-[state=checked]:line-through peer-data-[state=checked]:opacity-50">
+                    <p
+                      className={`uppercase ${
+                        event.checked ? 'line-through opacity-50' : ''
+                      }`}
+                    >
                       {event.name}
                     </p>
                   </div>
