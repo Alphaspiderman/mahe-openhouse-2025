@@ -197,6 +197,26 @@ export const eventsData = {
           checked: false,
         },
         {
+          name: 'Meh',
+          checked: false,
+        },
+      ],
+    },
+    {
+      department: 'Science and Humility',
+      location: 'AB4-207',
+      checked: false,
+      icon: '/icons/flask.png',
+      events: [
+        {
+          name: 'Physics of Optics',
+          checked: false,
+        },
+        {
+          name: 'ElectroConnect: Charging the Future',
+          checked: false,
+        },
+        {
           name: "CHE-'MISTERY'",
           checked: false,
         },

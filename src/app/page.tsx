@@ -14,8 +14,43 @@ export default function Home() {
 
   useEffect(() => {
     const savedChecklist = localStorage.getItem('activityChecklist');
+
     if (savedChecklist) {
-      setActivityChecklist(JSON.parse(savedChecklist));
+      const parsedSavedChecklist = JSON.parse(
+        savedChecklist
+      ) as EventsData['activities'];
+
+      // Create a new merged checklist that starts with the latest data
+      const mergedChecklist = eventsData.activities.map((currentActivity) => {
+        // Try to find this department in the saved checklist
+        const savedActivity = parsedSavedChecklist.find(
+          (saved) => saved.department === currentActivity.department
+        );
+
+        if (savedActivity) {
+          // Department exists in saved data
+          // Copy checked state and merge any new events
+          return {
+            ...currentActivity,
+            checked: savedActivity.checked,
+            events: currentActivity.events.map((currentEvent) => {
+              // Try to find this event in the saved department's events
+              const savedEvent = savedActivity.events.find(
+                (saved) => saved.name === currentEvent.name
+              );
+
+              return savedEvent
+                ? { ...currentEvent, checked: savedEvent.checked }
+                : currentEvent; // Keep new events with default checked state
+            }),
+          };
+        } else {
+          // This is a new department not in saved data
+          return currentActivity;
+        }
+      });
+
+      setActivityChecklist(mergedChecklist);
     }
   }, []);
 
