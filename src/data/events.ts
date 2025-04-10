@@ -124,7 +124,7 @@ export const eventsData = {
     },
     {
       department: 'Computer Science and Engineering',
-      location: 'AB5-104',
+      location: 'AB5-102',
       checked: false,
       icon: '/icons/code.png',
       events: [
@@ -140,7 +140,7 @@ export const eventsData = {
     },
     {
       department: 'Computer Science and Engineering (Project Demo)',
-      location: 'AB5-109',
+      location: 'AB5-106,107',
       checked: false,
       icon: '/icons/code.png',
       events: [
