@@ -27,7 +27,7 @@ export default function Home() {
             Schedule
           </CardTitle>
         </CardHeader>
-        <CardContent className="flex flex-col space-y-3">
+        <CardContent className="flex flex-col space-y-2">
           {eventsData.schedule.map((activity) => (
             <div key={activity.name} className="flex space-x-4">
               <div className="relative my-auto h-10 w-10 min-w-[36px] flex-shrink-0">
