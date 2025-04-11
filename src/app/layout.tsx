@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Work_Sans } from 'next/font/google';
 import Image from 'next/image';
 
+import DownloadButton from '@/components/download-button';
 import InstallButton from '@/components/install-button';
 import { Button } from '@/components/ui/button';
 
@@ -9,7 +10,6 @@ import bannerInstitute from '@/assets/banner-institute.webp';
 import bannerLogo from '@/assets/banner-logo.webp';
 
 import '@/styles/globals.css';
-import DownloadButton from '@/components/download-button';
 
 export const metadata: Metadata = {
   title: 'MAHE Open House 2025',
@@ -46,7 +46,7 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body className={`${fontSans.className} antialiased`}>
-        <header className="m-4 flex items-center justify-between">
+        <header className="m-4 flex flex-col items-start justify-between space-y-4 lg:flex-row lg:items-center">
           <div className="space-y-2">
             <Image
               src={bannerInstitute}
@@ -61,9 +61,10 @@ export default function RootLayout({
               priority
             />
           </div>
-
-          <InstallButton />
-          <DownloadButton />
+          <div>
+            <InstallButton />
+            <DownloadButton />
+          </div>
         </header>
         <main className="mx-4 my-8 lg:mx-10">{children}</main>
         <footer className="m-4 flex items-center justify-between">

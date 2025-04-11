@@ -20,7 +20,7 @@ const DownloadButton = () => {
       <Button
         onClick={handleInstallClick}
         variant="neutral"
-        className="uppercase"
+        className="cursor-pointer uppercase"
       >
         Download Prospectus
       </Button>
