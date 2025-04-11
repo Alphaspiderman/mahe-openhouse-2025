@@ -210,24 +210,40 @@ export const eventsData = {
       ],
     },
     {
+      department: 'Computer Science and Engineering (Lab Showcase)',
+      location: 'As mentioned below',
+      checked: false,
+      icon: '/icons/code.png',
+      events: [
+        {
+          name: 'NVIDIA GPU Lab Showcase (AB4-411)',
+          checked: false,
+        },
+        {
+          name: 'Apple Lab Showcase (AB5-303)',
+          checked: false,
+        },
+      ],
+    },
+    {
       department: 'Computer Science and Engineering (Project Demo)',
       location: 'AB5-102',
       checked: false,
       icon: '/icons/code.png',
       events: [
         {
-          name: 'Project Demo: AR/VR Game Development',
+          name: 'AR/VR Game Development',
           checked: false,
         },
         {
-          name: 'Project Demo: Multimodal Intelligent Knowledge Utility (MIKU)',
+          name: 'Multimodal Intelligent Knowledge Utility (MIKU)',
           checked: false,
         },
       ],
     },
     {
       department: 'Centre of Excellence in Autonomous Mobility',
-      location: 'AB5 MAVRO Lab',
+      location: 'AB5 Ground Floor, Decibel Lab',
       checked: false,
       icon: '/icons/car.png',
       events: [
@@ -247,7 +263,7 @@ export const eventsData = {
     },
     {
       department: 'Student Projects',
-      location: 'AB5 106, 107',
+      location: 'AB5-106, 107',
       checked: false,
       icon: '/icons/car.png',
       events: [
