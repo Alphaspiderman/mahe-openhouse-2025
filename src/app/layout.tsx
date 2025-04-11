@@ -61,7 +61,7 @@ export default function RootLayout({
               priority
             />
           </div>
-          <div>
+          <div className="space-x-2">
             <InstallButton />
             <DownloadButton />
           </div>
