@@ -55,7 +55,7 @@ export const eventsData = {
   ],
   activities: [
     {
-      department: 'Research Committee',
+      department: 'Research Committee and Workshop Practice',
       location: 'AB4-203',
       checked: false,
       icon: '/icons/atom.png',
@@ -87,75 +87,7 @@ export const eventsData = {
       ],
     },
     {
-      department: 'Information Technology',
-      location: 'AB5-105',
-      checked: false,
-      icon: '/icons/computer.png',
-      events: [
-        {
-          name: 'Briefing Course Structure 2025',
-          checked: false,
-        },
-        {
-          name: 'Highlighting Department Activities',
-          checked: false,
-        },
-      ],
-    },
-    {
-      department: 'Student Welfare',
-      location: 'AB5 Auditorium',
-      checked: false,
-      icon: '/icons/students.png',
-      events: [
-        {
-          name: 'Showcasing Student Projects',
-          checked: false,
-        },
-        {
-          name: 'Musical Band Performance',
-          checked: false,
-        },
-        {
-          name: 'Group Dance',
-          checked: false,
-        },
-      ],
-    },
-    {
-      department: 'Computer Science and Engineering',
-      location: 'AB5-102',
-      checked: false,
-      icon: '/icons/code.png',
-      events: [
-        {
-          name: 'Briefing Course Structure 2025',
-          checked: false,
-        },
-        {
-          name: 'Highlighting Department Activities',
-          checked: false,
-        },
-      ],
-    },
-    {
-      department: 'Computer Science and Engineering (Project Demo)',
-      location: 'AB5-102',
-      checked: false,
-      icon: '/icons/code.png',
-      events: [
-        {
-          name: 'Project Demo: AR/VR Game Development',
-          checked: false,
-        },
-        {
-          name: 'Project Demo: Multimodal Intelligent Knowledge Utility (MIKU)',
-          checked: false,
-        },
-      ],
-    },
-    {
-      department: 'Bioinspired Design and Optimization Centre (BIODOC)',
+      department: 'Bioinspired Design and Optimization Centre (BIODOC) & BIOTECH',
       location: 'AB4-205',
       checked: false,
       icon: '/icons/dna.png',
@@ -215,6 +147,74 @@ export const eventsData = {
       ],
     },
     {
+      department: 'Information Technology',
+      location: 'AB5-105',
+      checked: false,
+      icon: '/icons/computer.png',
+      events: [
+        {
+          name: 'Briefing Course Structure 2025',
+          checked: false,
+        },
+        {
+          name: 'Highlighting Department Activities',
+          checked: false,
+        },
+      ],
+    },
+    {
+      department: 'Student Welfare',
+      location: 'AB5 Auditorium',
+      checked: false,
+      icon: '/icons/students.png',
+      events: [
+        {
+          name: 'Showcasing Student Projects',
+          checked: false,
+        },
+        {
+          name: 'Musical Band Performance',
+          checked: false,
+        },
+        {
+          name: 'Group Dance',
+          checked: false,
+        },
+      ],
+    },
+    {
+      department: 'Computer Science and Engineering',
+      location: 'AB5-104',
+      checked: false,
+      icon: '/icons/code.png',
+      events: [
+        {
+          name: 'Briefing Course Structure 2025',
+          checked: false,
+        },
+        {
+          name: 'Highlighting Department Activities',
+          checked: false,
+        },
+      ],
+    },
+    {
+      department: 'Computer Science and Engineering (Project Demo)',
+      location: 'AB5-102',
+      checked: false,
+      icon: '/icons/code.png',
+      events: [
+        {
+          name: 'Project Demo: AR/VR Game Development',
+          checked: false,
+        },
+        {
+          name: 'Project Demo: Multimodal Intelligent Knowledge Utility (MIKU)',
+          checked: false,
+        },
+      ],
+    },
+    {
       department: 'Centre of Excellence in Autonomous Mobility',
       location: 'AB5 MAVRO Lab',
       checked: false,
@@ -230,6 +230,26 @@ export const eventsData = {
         },
         {
           name: 'Lab Activities in Autonomous Lab',
+          checked: false,
+        },
+      ],
+    },
+    {
+      department: 'Student Projects',
+      location: 'AB5 106, 107',
+      checked: false,
+      icon: '/icons/car.png',
+      events: [
+        {
+          name: 'IEEE CIS',
+          checked: false,
+        },
+        {
+          name: 'ElectroVista',
+          checked: false,
+        },
+        {
+          name: 'RADAR',
           checked: false,
         },
       ],
