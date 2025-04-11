@@ -6,10 +6,10 @@ import { Button } from '@/components/ui/button';
 
 const DownloadButton = () => {
   const handleInstallClick = async () => {
-    // Trigger download for MIT-BLR%20Prospectus%202025.pdf
+    // Trigger download for MIT-BLR%Brochure%2025.pdf
     const link = document.createElement('a');
-    link.href = '/MIT-BLR%20Prospectus%202025.pdf';
-    link.download = 'MIT-BLR Prospectus 2025.pdf';
+    link.href = '/MIT-BLR%Brochure%202025.pdf';
+    link.download = 'MIT-BLR Brochure 2025.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -22,7 +22,7 @@ const DownloadButton = () => {
         variant="neutral"
         className="cursor-pointer uppercase"
       >
-        Download Prospectus
+        Download Brochure
       </Button>
     </>
   );
