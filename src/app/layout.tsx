@@ -3,11 +3,13 @@ import { Work_Sans } from 'next/font/google';
 import Image from 'next/image';
 
 import InstallButton from '@/components/install-button';
+import { Button } from '@/components/ui/button';
 
 import bannerInstitute from '@/assets/banner-institute.webp';
 import bannerLogo from '@/assets/banner-logo.webp';
 
 import '@/styles/globals.css';
+import DownloadButton from '@/components/download-button';
 
 export const metadata: Metadata = {
   title: 'MAHE Open House 2025',
@@ -61,6 +63,7 @@ export default function RootLayout({
           </div>
 
           <InstallButton />
+          <DownloadButton />
         </header>
         <main className="mx-4 my-8 lg:mx-10">{children}</main>
         <footer className="m-4 flex items-center justify-between">
