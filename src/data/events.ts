@@ -263,7 +263,7 @@ export const eventsData = {
     },
     {
       department: 'Student Projects',
-      location: 'AB5-106, 107',
+      location: 'AB5-106/107',
       checked: false,
       icon: '/icons/car.png',
       events: [
