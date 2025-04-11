@@ -27,6 +27,10 @@ export const eventsData = {
       icon: '/icons/mic.png',
       times: [
         {
+          startTime: '10:30AM',
+          endTime: '11:00AM',
+        },
+        {
           startTime: '11:30AM',
           endTime: '12:00PM',
         },
@@ -87,7 +91,8 @@ export const eventsData = {
       ],
     },
     {
-      department: 'Bioinspired Design and Optimization Centre (BIODOC) & BIOTECH',
+      department:
+        'Bioinspired Design and Optimization Centre (BIODOC) & BIOTECH',
       location: 'AB4-205',
       checked: false,
       icon: '/icons/dna.png',
