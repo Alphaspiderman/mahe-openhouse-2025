@@ -24,6 +24,7 @@ export const eventsData = {
     },
     {
       name: 'Address by Director of MIT',
+      location: 'AB5 Auditorium',
       icon: '/icons/mic.png',
       times: [
         {

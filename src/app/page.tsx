@@ -77,6 +77,12 @@ export default function Home() {
                 <p className="text-lg font-bold uppercase lg:text-xl">
                   {activity.name}
                 </p>
+                {activity.location && (
+                  <p className="text-sm uppercase">
+                    <b className="font-semibold">Location:</b>{' '}
+                    {activity.location}
+                  </p>
+                )}
                 {activity.times.length > 1 ? (
                   <ul className="list-inside list-disc uppercase lg:text-lg">
                     {activity.times.map((time, index) => (
