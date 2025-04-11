@@ -140,7 +140,7 @@ export const eventsData = {
     },
     {
       department: 'Computer Science and Engineering (Project Demo)',
-      location: 'AB5-106,107',
+      location: 'AB5-102',
       checked: false,
       icon: '/icons/code.png',
       events: [
@@ -178,46 +178,6 @@ export const eventsData = {
         },
         {
           name: 'Patents/Copyrights',
-          checked: false,
-        },
-      ],
-    },
-    {
-      department: 'Science and Humanities',
-      location: 'AB4-207',
-      checked: false,
-      icon: '/icons/flask.png',
-      events: [
-        {
-          name: 'Physics of Optics',
-          checked: false,
-        },
-        {
-          name: 'ElectroConnect: Charging the Future',
-          checked: false,
-        },
-        {
-          name: 'Meh',
-          checked: false,
-        },
-      ],
-    },
-    {
-      department: 'Science and Humility',
-      location: 'AB4-207',
-      checked: false,
-      icon: '/icons/flask.png',
-      events: [
-        {
-          name: 'Physics of Optics',
-          checked: false,
-        },
-        {
-          name: 'ElectroConnect: Charging the Future',
-          checked: false,
-        },
-        {
-          name: "CHE-'MISTERY'",
           checked: false,
         },
       ],
@@ -270,26 +230,6 @@ export const eventsData = {
         },
         {
           name: 'Lab Activities in Autonomous Lab',
-          checked: false,
-        },
-      ],
-    },
-    {
-      department: 'IEEE Student Branch',
-      location: 'AB5-102',
-      checked: false,
-      icon: '/icons/ieee.png',
-      events: [
-        {
-          name: 'Project Showcase: Using OpenCV for Interactive Presentation',
-          checked: false,
-        },
-        {
-          name: 'Project Showcase: AI Optimisation via Reservoir Computing',
-          checked: false,
-        },
-        {
-          name: 'IEEE Website Display',
           checked: false,
         },
       ],
