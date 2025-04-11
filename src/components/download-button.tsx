@@ -8,7 +8,7 @@ const DownloadButton = () => {
   const handleInstallClick = async () => {
     // Trigger download for MIT-BLR%Brochure%2025.pdf
     const link = document.createElement('a');
-    link.href = '/MIT-BLR%Brochure%202025.pdf';
+    link.href = '/MIT-BLR%20Brochure%202025.pdf';
     link.download = 'MIT-BLR Brochure 2025.pdf';
     document.body.appendChild(link);
     link.click();
