@@ -150,6 +150,15 @@ export default function Home() {
                     <b className="font-semibold">Location:</b>{' '}
                     {activity.location}
                   </p>
+                  {activity.note && (
+                    <p
+                      className={`text-sm uppercase ${
+                        activity.checked ? 'opacity-50' : ''
+                      }`}
+                    >
+                      <b className="font-semibold">Note:</b> {activity.note}
+                    </p>
+                  )}
                 </div>
               </div>
               <div className="flex flex-col space-y-2 pl-8">

@@ -171,6 +171,7 @@ export const eventsData = {
     {
       department: 'Student Welfare',
       location: 'AB5 Auditorium',
+      note: 'Events till 12.30PM only.',
       checked: false,
       icon: '/icons/students.png',
       events: [
@@ -179,7 +180,11 @@ export const eventsData = {
           checked: false,
         },
         {
-          name: 'Musical Band Performance',
+          name: 'Eastern Vocal Performance',
+          checked: false,
+        },
+        {
+          name: 'Solo Dance',
           checked: false,
         },
         {
