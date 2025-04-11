@@ -18,7 +18,7 @@ export const eventsData = {
       times: [
         {
           startTime: '10:00AM',
-          endTime: '11:30AM',
+          endTime: '05.00PM',
         },
       ],
     },

@@ -62,8 +62,8 @@ export default function RootLayout({
             />
           </div>
           <div className="space-x-2">
-            <InstallButton />
             <DownloadButton />
+            <InstallButton />
           </div>
         </header>
         <main className="mx-4 my-8 lg:mx-10">{children}</main>
