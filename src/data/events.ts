@@ -165,22 +165,6 @@ export const eventsData = {
       ],
     },
     {
-      department: 'Information Technology',
-      location: 'AB5-105',
-      checked: false,
-      icon: '/icons/computer.png',
-      events: [
-        {
-          name: 'Briefing Course Structure 2025',
-          checked: false,
-        },
-        {
-          name: 'Highlighting Department Activities',
-          checked: false,
-        },
-      ],
-    },
-    {
       department: 'Student Welfare',
       location: 'AB5 Auditorium',
       note: 'Events till 12.30PM only.',
@@ -207,7 +191,7 @@ export const eventsData = {
     },
     {
       department: 'Computer Science and Engineering',
-      location: 'AB5-104',
+      location: 'AB5-104/105',
       checked: false,
       icon: '/icons/code.png',
       events: [
