@@ -92,6 +92,18 @@ export const eventsData = {
       ],
     },
     {
+      department: 'Office of Corporate Engagement and Placements',
+      location: 'AB5 Ground Floor, Placement Cell',
+      checked: false,
+      icon: '/icons/briefcase.png',
+      events: [
+        {
+          name: 'Placement Information Desk',
+          checked: false,
+        },
+      ],
+    },
+    {
       department:
         'Bioinspired Design and Optimization Centre (BIODOC) & BIOTECH',
       location: 'AB4-205',
